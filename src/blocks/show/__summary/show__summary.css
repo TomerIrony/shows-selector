@@ -7,5 +7,6 @@
 @media screen and (max-width: 770px) {
   .show__summary {
     margin: 25px 0 0 0;
+    width: 80%;
   }
 }

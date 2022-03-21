@@ -12,7 +12,7 @@ function Slides(props) {
   useEffect(() => {
     const fetchPosts = async () => {
       setLoading(true);
-      const res = await api.getShows('Tech');
+      const res = await api.getShows('Police');
       setShows(res);
       setLoading(false);
     };

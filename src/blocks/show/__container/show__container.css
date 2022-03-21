@@ -8,5 +8,7 @@
 @media screen and (max-width: 770px) {
   .show__container {
     justify-content: center;
+    width: 90%;
+    margin: 12px auto 30px;
   }
 }

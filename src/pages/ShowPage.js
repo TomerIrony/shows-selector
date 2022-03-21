@@ -70,10 +70,12 @@ function ShowPage(props) {
                 return (
                   <div key={i} className="show__cast-card">
                     <div className="show__name">{item.person.name}</div>
-                    <img
-                      src={item.person.image.medium}
-                      alt={item.person.name}
-                    />
+                    {item.person.image !== null ? (
+                      <img
+                        src={item.person.image.medium}
+                        alt={item.person.name}
+                      />
+                    ) : null}
                   </div>
                 );
               })}
