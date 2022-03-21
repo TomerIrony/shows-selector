@@ -34,8 +34,8 @@ class Api {
     }).then(this._checkResponse);
   }
 
-  getAllShows() {
-    return fetch(`${this._url}/schedule/full`, {
+  getCast(id) {
+    return fetch(`${this._url}/shows/${id}/cast`, {
       method: 'GET',
       headers: {
         Accept: '*/*',

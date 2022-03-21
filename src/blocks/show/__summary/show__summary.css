@@ -1,0 +1,11 @@
+.show__summary {
+  width: 60%;
+  font-size: 18px;
+  margin: 0 0 0 15px;
+}
+
+@media screen and (max-width: 770px) {
+  .show__summary {
+    margin: 25px 0 0 0;
+  }
+}

@@ -1,0 +1,6 @@
+@media screen and (max-width: 770px) {
+  .show__title {
+    max-width: max-content;
+    margin: 0 auto;
+  }
+}

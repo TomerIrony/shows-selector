@@ -1,0 +1,12 @@
+.show__container {
+  display: flex;
+  align-items: flex-end;
+  font-size: 18px;
+  margin: 12px 0;
+}
+
+@media screen and (max-width: 770px) {
+  .show__container {
+    justify-content: center;
+  }
+}

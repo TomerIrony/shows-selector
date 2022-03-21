@@ -13,7 +13,7 @@ function Card(props) {
             alt={props.card.show.name}
           />
         ) : (
-          <div>No image found</div>
+          <div className="card__image-placeholder">No image found</div>
         )}
         <h2 className="card__title">{props.card.show.name}</h2>
       </Link>

@@ -1,0 +1,9 @@
+.show__cast-title {
+  padding: 50px 0 25px 0;
+}
+
+@media screen and (max-width: 770px) {
+  .show__cast-title {
+    text-align: center;
+  }
+}

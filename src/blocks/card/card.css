@@ -1,9 +1,16 @@
 .card {
   max-width: 18%;
+  flex-basis: 100%;
+  margin: 10px 0 0 0;
+  transition: 0.5s ease-in-out;
 }
 
 @media screen and (max-width: 740px) {
   .card {
-    max-width: 100%;
+    max-width: 80%;
   }
+}
+
+.card:hover {
+  transform: scale(1.1);
 }

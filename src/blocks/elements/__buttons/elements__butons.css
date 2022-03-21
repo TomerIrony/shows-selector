@@ -1,9 +1,15 @@
 .elements__button {
-  font-size: larger;
+  text-indent: -9999px;
+  border: 1px solid white;
   width: 25px;
-  background-color: #2f71e5;
+  height: 25px;
+  border-radius: 99%;
   color: black;
   text-align: center;
+}
+
+.elements__button-pressed {
+  background-color: white;
 }
 
 .elements__button:hover {
@@ -17,7 +23,13 @@ nav ul {
 .elements__buttons {
   display: flex;
   margin: 0 auto;
-  width: 10%;
+  width: 8%;
   justify-content: space-around;
-  padding: 0 0 100px 0;
+  padding: 50px 0 100px 0;
+}
+
+@media screen and (max-width: 740px) {
+  .elements__buttons {
+    width: 20%;
+  }
 }

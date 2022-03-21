@@ -20,7 +20,6 @@ function Slides(props) {
     fetchPosts();
   }, []);
 
-  // Get Current posts
   const indexOfLastShow = currentPage * showsPerPage;
   const indexOfFirstShow = indexOfLastShow - showsPerPage;
   const currentShows = shows.slice(indexOfFirstShow, indexOfLastShow);

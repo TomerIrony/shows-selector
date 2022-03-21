@@ -1,0 +1,5 @@
+.card__image-placeholder {
+  width: max-content;
+  max-height: 295px;
+  height: 100%;
+}

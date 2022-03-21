@@ -1,19 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Pagination(props) {
   const pageNumbers = [];
+  const [button, setButton] = useState(true);
 
   for (let i = 1; i <= Math.ceil(props.totalShows / props.showsPerPage); i++) {
     pageNumbers.push(i);
   }
   return (
-    <nav>
+    <nav className="elements__navigation">
       <ul className="elements__buttons">
         {pageNumbers.map((number) => (
           <li key={number}>
             <div
-              className="elements__button"
-              onClick={() => props.paginate(number)}
+              className={'elements__button'}
+              onClick={(e) => {
+                props.paginate(number);
+              }}
             >
               {number}
             </div>
