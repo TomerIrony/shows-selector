@@ -1,0 +1,23 @@
+.elements__button {
+  font-size: larger;
+  width: 25px;
+  background-color: #2f71e5;
+  color: black;
+  text-align: center;
+}
+
+.elements__button:hover {
+  cursor: pointer;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+.elements__buttons {
+  display: flex;
+  margin: 0 auto;
+  width: 10%;
+  justify-content: space-around;
+  padding: 0 0 100px 0;
+}

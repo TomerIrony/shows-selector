@@ -1,0 +1,10 @@
+.elements__main {
+  text-align: center;
+}
+
+@media screen and (max-width: 740px) {
+  .elements__main {
+    flex-direction: column;
+    align-content: center;
+  }
+}

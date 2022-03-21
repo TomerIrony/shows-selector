@@ -1,38 +1,19 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+@import url(./blocks/root/root.css);
+@import url(./blocks/header/header.css);
+@import url(./blocks/header/__headline/header__headline.css);
+@import url(./blocks/header/__text/header__text.css);
+@import url(./blocks/header/__form/header__form.css);
+@import url(./blocks/header/__form/__form-fieldset/header__form-fieldset.css);
+@import url(./blocks/header/__form/__form-input/header__form-input.css);
+@import url(./blocks/header/__form/__form-btn/header__form-btn.css);
+@import url(./blocks/header/__container/header__container.css);
+@import url(./blocks/elements/elements.css);
+@import url(./blocks/card/card.css);
+@import url(./blocks/background/background.css);
+@import url(./blocks/elements/__main/elements__main.css);
+@import url(./blocks/card/__title/card__title.css);
+@import url(./blocks/card/__link/card__link.css);
+@import url(./blocks/elements/__buttons/elements__butons.css);
+@import url(./blocks/card/__image/card__image.css);
+@import url(./blocks/sliders/sliders.css);
+@import url(./blocks/sliders/__title/sliders__title.css);

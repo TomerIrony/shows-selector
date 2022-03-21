@@ -1,0 +1,21 @@
+.root {
+  max-width: 1440px;
+  color: white;
+  min-width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: medium;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
