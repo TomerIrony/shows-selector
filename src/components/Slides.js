@@ -12,7 +12,7 @@ function Slides(props) {
   useEffect(() => {
     const fetchPosts = async () => {
       setLoading(true);
-      const res = await api.getShows('Police');
+      const res = await api.getShows('Cold'); // inital value for search
       setShows(res);
       setLoading(false);
     };

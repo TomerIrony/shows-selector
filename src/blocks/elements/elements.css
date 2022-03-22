@@ -3,7 +3,9 @@
   flex-wrap: wrap;
   width: 80%;
   margin: 0 auto;
+  padding: 0 0 50px 0;
   max-width: 80%;
+  position: relative;
   justify-content: space-between;
 }
 
@@ -13,4 +15,15 @@
     align-content: center;
     margin: 0 auto;
   }
+}
+
+.elements-loader {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 0 50px 0;
+  max-width: 80%;
+  position: relative;
+  justify-content: center;
 }

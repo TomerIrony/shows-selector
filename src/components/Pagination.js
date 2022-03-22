@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function Pagination(props) {
   const pageNumbers = [];
-  const [button, setButton] = useState(true);
 
   for (let i = 1; i <= Math.ceil(props.totalShows / props.showsPerPage); i++) {
     pageNumbers.push(i);

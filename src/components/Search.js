@@ -7,9 +7,7 @@ function Search(props) {
     <div className="header">
       <div className="header__container">
         <h1 className="header__headline">Which show is on your Mind?</h1>
-        <p className="header__text">
-          Find your favorite shows and their ratings
-        </p>
+        <p className="header__text">Find your favorite shows on one place</p>
       </div>
       <form
         onSubmit={(e) => {

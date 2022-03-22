@@ -15,10 +15,6 @@
   background-color: #347eff;
 }
 
-.header__form-btn:active {
-  background-color: #2a65cc;
-}
-
 @media screen and (max-width: 769px) {
   .header__form-btn {
     width: 35.714%;
@@ -33,12 +29,6 @@
 
 @media screen and (max-width: 740px) {
   .header__form-btn {
-    width: 288px;
-    margin: 16px 0 0 0;
-    height: 56px;
-    position: relative;
-  }
-  .header__form-btn-disabled {
     width: 288px;
     margin: 16px 0 0 0;
     height: 56px;

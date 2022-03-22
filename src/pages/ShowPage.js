@@ -22,11 +22,11 @@ function ShowPage(props) {
     };
 
     fetchPost();
-  }, []);
+  }, [id]);
   return (
     <div>
       {loading ? (
-        <div>Loading...</div>
+        <div></div>
       ) : (
         <>
           <div className="show">
@@ -75,7 +75,11 @@ function ShowPage(props) {
                         src={item.person.image.medium}
                         alt={item.person.name}
                       />
-                    ) : null}
+                    ) : (
+                      <div className="card__image-placeholder">
+                        No image found
+                      </div>
+                    )}
                   </div>
                 );
               })}

@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import Card from '../components/Card';
 import api from '../utils/Api';
 import BackButton from '../components/BackButton';
+import Loader from '../components/Loader';
+import NothingFound from '../components/NothingFound';
 
 function Results(props) {
   const [shows, setShows] = useState([]);
@@ -27,9 +29,17 @@ function Results(props) {
         <BackButton />
       </div>
       <h1 className="results__title">Your results for '{q}'</h1>
-      <div className="elements">
+      <div
+        className={
+          loading || shows.length === 0 ? 'elements-loader' : 'elements'
+        }
+      >
         {loading ? (
-          <h2>Loading...</h2>
+          <h2>
+            <Loader />
+          </h2>
+        ) : shows.length === 0 ? (
+          <NothingFound />
         ) : (
           shows.map((card, i) => {
             return <Card key={i} card={card} />;

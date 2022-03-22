@@ -1,9 +1,16 @@
 import React from 'react';
 import Card from './Card';
+import Loader from './Loader';
 
 function Shows(props) {
   if (props.loading) {
-    return <h2>Loading...</h2>;
+    return (
+      <div className="loader__main">
+        <h2>
+          <Loader />
+        </h2>
+      </div>
+    );
   }
   return (
     <ul className="elements elements__main">

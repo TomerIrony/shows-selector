@@ -1,0 +1,10 @@
+.loader {
+  height: 200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+  margin: 120px 0 0 0;
+}
