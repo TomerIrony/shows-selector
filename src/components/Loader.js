@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Preloader(props) {
+function Preloader() {
   return (
     <div className="loader">
       <i className="loader__circle"></i>

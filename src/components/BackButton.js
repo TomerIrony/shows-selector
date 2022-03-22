@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-function BackButton(props) {
+function BackButton() {
   const navigate = useNavigate();
   return (
     <button

@@ -13,7 +13,7 @@ function Pagination(props) {
           <li key={number}>
             <div
               className={'elements__button'}
-              onClick={(e) => {
+              onClick={() => {
                 props.paginate(number);
               }}
             >

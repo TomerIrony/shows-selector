@@ -3,7 +3,7 @@ import api from '../utils/Api';
 import Shows from './Shows';
 import Pagination from './Pagination';
 
-function Slides(props) {
+function Slides() {
   const [shows, setShows] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-function Search(props) {
+function Search() {
   let navigate = useNavigate();
   return (
     <div className="header">

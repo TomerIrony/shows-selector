@@ -6,7 +6,7 @@ import BackButton from '../components/BackButton';
 import Loader from '../components/Loader';
 import NothingFound from '../components/NothingFound';
 
-function Results(props) {
+function Results() {
   const [shows, setShows] = useState([]);
   const [loading, setLoading] = useState(false);
   const location = useLocation();
@@ -28,7 +28,7 @@ function Results(props) {
       <div className="results">
         <BackButton />
       </div>
-      <h1 className="results__title">Your results for '{q}'</h1>
+      <h1 className="results__title">Your results for {`'${q}'`}</h1>
       <div
         className={
           loading || shows.length === 0 ? 'elements-loader' : 'elements'

@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import api from '../utils/Api';
 import BackButton from '../components/BackButton';
 
-function ShowPage(props) {
+function ShowPage() {
   const location = useLocation();
   const id = location.pathname.split('/')[2];
   const [show, setShow] = useState([]);
@@ -44,8 +44,12 @@ function ShowPage(props) {
 
             <div className="show__genre">
               {show.genres
-                ? show.genres.map((item) => {
-                    return <div className="show__genre-item">{item}</div>;
+                ? show.genres.map((item, i) => {
+                    return (
+                      <div key={i} className="show__genre-item">
+                        {item}
+                      </div>
+                    );
                   })
                 : null}
             </div>

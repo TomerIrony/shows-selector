@@ -1,6 +1,6 @@
 import React from 'react';
 
-function NothingFound(props) {
+function NothingFound() {
   return (
     <div className="found">
       <div className="found__container">
