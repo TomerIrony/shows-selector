@@ -1,6 +1,7 @@
 
 # Run on your machine #
 npm i
+<br/>
 npm run start - a web browser window should open on localhost:3000
 
 # Framework #
