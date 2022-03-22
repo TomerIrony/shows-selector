@@ -1,0 +1,11 @@
+.show__genre-item {
+  border: 2px solid #bbb3b3;
+  border-radius: 1rem;
+  margin-right: 20px;
+  padding: 0.15rem 0.4rem;
+  font-size: smaller;
+}
+
+.show__genre-item:last-of-type {
+  margin: 0;
+}

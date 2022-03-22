@@ -41,3 +41,5 @@
 @import url(./blocks/found/__title/found__title.css);
 @import url(./blocks/found/found.css);
 @import url(./blocks/loader/__main/loader__main.css);
+@import url(./blocks/show/__genre/show__genre.css);
+@import url(./blocks/show/__genre/__genre-item/show__genre-item.css);

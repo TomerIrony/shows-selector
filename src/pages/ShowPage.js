@@ -15,8 +15,8 @@ function ShowPage(props) {
       const res = await api.getSingleShow(id);
       setShow(res);
       if (res.id) {
-        const res1 = await api.getCast(id);
-        setCast(res1);
+        const castRes = await api.getCast(id);
+        setCast(castRes);
       }
       setLoading(false);
     };
@@ -42,10 +42,10 @@ function ShowPage(props) {
                 (show.ended === null ? 'Airing' : show.ended)}
             </p>
 
-            <div>
+            <div className="show__genre">
               {show.genres
                 ? show.genres.map((item) => {
-                    return item + ' ';
+                    return <div className="show__genre-item">{item}</div>;
                   })
                 : null}
             </div>

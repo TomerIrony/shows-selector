@@ -1,3 +1,11 @@
 .results__title {
   padding: 0 0 50px 0;
 }
+
+@media screen and (max-width: 770px) {
+  .results__title {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 0 20px;
+  }
+}

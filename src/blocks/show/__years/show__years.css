@@ -1,3 +1,9 @@
 .show__years {
   margin: 0 30px 0 0;
 }
+
+@media screen and (max-width: 770px) {
+  .show__years {
+    margin: 0 0 15px 0;
+  }
+}

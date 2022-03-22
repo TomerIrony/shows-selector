@@ -7,8 +7,10 @@
 
 @media screen and (max-width: 770px) {
   .show__container {
-    justify-content: center;
+    align-items: center;
     width: 90%;
+    text-align: center;
     margin: 12px auto 30px;
+    flex-direction: column;
   }
 }
