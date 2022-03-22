@@ -2,8 +2,8 @@ import React from 'react';
 import Card from './Card';
 import Loader from './Loader';
 
-function Shows(props) {
-  if (props.loading) {
+const Shows = ({ loading, shows }) => {
+  if (loading) {
     return (
       <div className="loader__main">
         <h2>
@@ -14,11 +14,11 @@ function Shows(props) {
   }
   return (
     <ul className="elements elements__main">
-      {props.shows.map((show, i) => (
+      {shows.map((show, i) => (
         <Card key={i} card={show} />
       ))}
     </ul>
   );
-}
+};
 
 export default Shows;

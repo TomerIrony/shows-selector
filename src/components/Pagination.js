@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Pagination(props) {
+const Pagination = ({ paginate, totalShows, showsPerPage }) => {
   const pageNumbers = [];
 
-  for (let i = 1; i <= Math.ceil(props.totalShows / props.showsPerPage); i++) {
+  for (let i = 1; i <= Math.ceil(totalShows / showsPerPage); i++) {
     pageNumbers.push(i);
   }
   return (
@@ -14,7 +14,7 @@ function Pagination(props) {
             <div
               className={'elements__button'}
               onClick={() => {
-                props.paginate(number);
+                paginate(number);
               }}
             >
               {number}
@@ -24,6 +24,6 @@ function Pagination(props) {
       </ul>
     </nav>
   );
-}
+};
 
 export default Pagination;
